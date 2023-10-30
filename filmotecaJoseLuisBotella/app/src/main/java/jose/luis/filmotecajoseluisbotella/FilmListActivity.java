@@ -1,12 +1,16 @@
 package jose.luis.filmotecajoseluisbotella;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -33,5 +37,32 @@ public class FilmListActivity extends AppCompatActivity implements AdapterView.O
             startActivity(intent);
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.mymenu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+
+        switch (id){
+            case R.id.itemConfFacturas:
+                Toast.makeText(getApplicationContext(), "Has Pulsado configuracion de facturas", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.itemConfPedidos:
+                Toast.makeText(getApplicationContext(), "Has Pulsado configuracion de pedidos", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.itemconfclientes:
+                Toast.makeText(getApplicationContext(), "Has Pulsado configuracion de clientes", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.itemAcercaDe:
+                Toast.makeText(getApplicationContext(), "Has Pulsado acerca", Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

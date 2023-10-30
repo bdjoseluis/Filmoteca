@@ -33,17 +33,19 @@ public class FilmAdapter extends ArrayAdapter <Film>{
 
         View mifila=inflador.inflate(mResource, parent, false);
 
-        TextView txtCiudad= mifila.findViewById(R.id.txtFilm);
-        TextView txtDescripcion=mifila.findViewById(R.id.txtDescripcion);
-        ImageView imgCiudad=mifila.findViewById(R.id.imgFilm);
+        TextView titulo= mifila.findViewById(R.id.txtFilm);
+        TextView director=mifila.findViewById(R.id.directordata);
+        TextView anyo=mifila.findViewById(R.id.anyodata);
+        TextView tipo=mifila.findViewById(R.id.tipodata);
+        ImageView imgFilm=mifila.findViewById(R.id.imgFilm);
 
-        String nombre=misPeliculas.get(position).getComments();
+     /*   String nombre=misPeliculas.get(position).getComments();
         txtCiudad.setText(nombre);
         String descripcion=misPeliculas.get(position).getDescripcion();
         txtDescripcion.setText(descripcion);
         int idimagen=misPeliculas.get(position).getImagen();
         imgCiudad.setImageResource(idimagen);
-
+*/
         return mifila;
     }
 }

@@ -10,7 +10,7 @@ public class FilmDataSource {
         Film f = new Film();
         f.setTitle("Interstellar");
         f.setDirector("Christopher Nolan");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.interestelar);
         f.setComments("A team of explorers travel throught a wormhole in space in an attempt to ensure humanity’s survival");
         f.setFormat(Film.FORMAT_DIGITAL);
         f.setGenre(Film.GENRE_SCIFI);
