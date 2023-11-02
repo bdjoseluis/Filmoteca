@@ -15,14 +15,15 @@ import java.util.ArrayList;
 
 public class FilmAdapter extends ArrayAdapter <Film>{
 
-    private int mResource;
-    private ArrayList<Film> misPeliculas;
+    private Context context;
+    private int resource;
+    private ArrayList<Film> misPeliculas = null;
 
-    public FilmAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Film> objects) {
-        super(context, resource, objects);
-
-        mResource=resource;
-        misPeliculas =objects;
+    public FilmAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Film> misPeliculas) {
+        super(context, resource, misPeliculas);
+        this.context = context;
+        this.resource = resource;
+        this.misPeliculas = misPeliculas;
 
 
     }
@@ -31,13 +32,16 @@ public class FilmAdapter extends ArrayAdapter <Film>{
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflador=LayoutInflater.from(this.getContext());
 
-        View mifila=inflador.inflate(mResource, parent, false);
+        View mifila=inflador.inflate(resource, parent, false);
+
+        Film film = misPeliculas.get(position);
 
         TextView titulo= mifila.findViewById(R.id.txtFilm);
         TextView director=mifila.findViewById(R.id.directordata);
         TextView anyo=mifila.findViewById(R.id.anyodata);
-        TextView tipo=mifila.findViewById(R.id.tipodata);
+        TextView tipo=mifila.findViewById(R.id.genero);
         ImageView imgFilm=mifila.findViewById(R.id.imgFilm);
+
 
      /*   String nombre=misPeliculas.get(position).getComments();
         txtCiudad.setText(nombre);
