@@ -16,34 +16,40 @@ public class FilmDataActivity extends AppCompatActivity {
 
     ArrayList<Film> films = FilmDataSource.films;
     int posicion;
+    private Film film;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_film_data);
 
-        Intent intent = getIntent();
-        posicion = intent.getIntExtra("FILM_POSITION", 0);
+        Intent intent =  new Intent(FilmDataActivity.this, FilmDataActivity.class);
+        posicion = intent.getIntExtra("FILM_POSITION", 0);//mirarselo preguntar a german por q me tiene hartico
+       // Intent intent = new Intent(FilmDataListActivity.this, FilmDataActivity.class);
 
-        Film film = films.get(posicion);
+        //Film film = films.get(posicion);
+        film = FilmDataSource.films.get(posicion);
 
-        ImageView caratula = findViewById(R.id.caratuladata);
-        caratula.setImageResource(film.getImageResId());
+        if (film != null) {
 
-        TextView titulo = findViewById(R.id.titulodata);
-        titulo.setText(film.getTitle());
+            setTitle(film.getTitle());
 
-        TextView director = findViewById(R.id.directordata);
-        director.setText(film.getDirector());
+            ImageView caratulaImageView = findViewById(R.id.caratuladata);
+            TextView tituloTextView = findViewById(R.id.titulodata);
+            TextView directorTextView = findViewById(R.id.directordata);
+            TextView anyoTextView = findViewById(R.id.anyodata);
+            TextView formatoTextView = findViewById(R.id.tipodataa);
+            TextView generoTextView = findViewById(R.id.genero);
+            TextView descripcionTextView = findViewById(R.id.descripciondata);
 
-        TextView anyo = findViewById(R.id.anyodata);
-        anyo.setText(String.valueOf(film.getYear()));
-
-        TextView genero = findViewById(R.id.genero);
-        genero.setText(Genero(film.getGenre()));
-
-        TextView formato = findViewById(R.id.tipodataa);
-        formato.setText(formato(film.getFormat()));
+            caratulaImageView.setImageResource(film.getImageResId());
+            tituloTextView.setText(film.getTitle());
+            directorTextView.setText(film.getDirector());
+            anyoTextView.setText(String.valueOf(film.getYear()));
+            formatoTextView.setText(formato(film.getFormat()));
+            generoTextView.setText(Genero(film.getGenre()));
+            descripcionTextView.setText(film.getComments());
+        }
 
 
     Button imdbButton = findViewById(R.id.enlaceweb);
@@ -75,9 +81,14 @@ public class FilmDataActivity extends AppCompatActivity {
             intent.putExtra("FILM_POSITION", posicion);
             if (intent.resolveActivity(getPackageManager()) != null) {
                 startActivity(intent);
+
+
             }
         }
     });}
+
+
+
 
         private String Genero(int genre) {
             switch (genre) {
@@ -86,9 +97,9 @@ public class FilmDataActivity extends AppCompatActivity {
                 case Film.GENRE_COMEDY:
                     return "Comedia";
                 case Film.GENRE_DRAMA:
-                    return "Drama";
+                    return "Drama, ";
                 case Film.GENRE_SCIFI:
-                    return "Ciencia Ficción";
+                    return "Scifi";
                 case Film.GENRE_HORROR:
                     return "Terror";
                 default:
@@ -99,13 +110,14 @@ public class FilmDataActivity extends AppCompatActivity {
         private String formato(int format) {
             switch (format) {
                 case Film.FORMAT_DVD:
-                    return "DVD";
+                    return "DVD, ";
                 case Film.FORMAT_BLURAY:
-                    return "Blu-ray";
+                    return "Blu-ray, ";
                 case Film.FORMAT_DIGITAL:
-                    return "Digital";
+                    return "Digital, ";
                 default:
                     return "Desconocido";
             }
-        }
+}
+
 }

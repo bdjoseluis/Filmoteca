@@ -8,208 +8,181 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv2"
-        android:layout_width="409dp"
-        android:layout_height="340dp"
+        android:layout_width="426dp"
+        android:layout_height="525dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" >
+        app:layout_constraintVertical_bias="0.125">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="409dp"
-            android:layout_height="340dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/caratuladata"
-                android:layout_width="110dp"
-                android:layout_height="190dp"
+                android:layout_width="152dp"
+                android:layout_height="313dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintHorizontal_bias="0.015"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.106"
+                app:layout_constraintVertical_bias="0.0"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/titulodata"
-                android:layout_width="96dp"
-                android:layout_height="21dp"
+                android:layout_width="150dp"
+                android:layout_height="27dp"
                 android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.474"
+                app:layout_constraintHorizontal_bias="0.629"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.051" />
+                app:layout_constraintVertical_bias="0.078" />
 
             <TextView
                 android:id="@+id/directordata"
-                android:layout_width="91dp"
-                android:layout_height="18dp"
+                android:layout_width="124dp"
+                android:layout_height="23dp"
                 android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.468"
+                app:layout_constraintHorizontal_bias="0.576"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/directordataquieto"
-                app:layout_constraintVertical_bias="0.027" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/directordataquieto"
-                android:layout_width="97dp"
-                android:layout_height="21dp"
+                android:layout_width="127dp"
+                android:layout_height="26dp"
                 android:layout_marginTop="8dp"
                 android:text="Director:"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.477"
+                app:layout_constraintHorizontal_bias="0.571"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titulodata"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/anyodataquieto"
-                android:layout_width="102dp"
-                android:layout_height="17dp"
-                android:text="TextView"
+                android:layout_width="129dp"
+                android:layout_height="25dp"
+                android:text="Año:"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintHorizontal_bias="0.583"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/directordata"
-                app:layout_constraintVertical_bias="0.03" />
+                app:layout_constraintVertical_bias="0.022" />
 
             <TextView
                 android:id="@+id/anyodata"
-                android:layout_width="101dp"
-                android:layout_height="16dp"
+                android:layout_width="134dp"
+                android:layout_height="31dp"
                 android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintHorizontal_bias="0.593"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/anyodataquieto"
-                app:layout_constraintVertical_bias="0.038" />
+                app:layout_constraintVertical_bias="0.024" />
 
             <TextView
                 android:id="@+id/genero"
-                android:layout_width="50dp"
-                android:layout_height="22dp"
+                android:layout_width="108dp"
+                android:layout_height="30dp"
                 android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.415"
+                app:layout_constraintHorizontal_bias="0.893"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/anyodata"
-                app:layout_constraintVertical_bias="0.055" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.389" />
 
             <Button
                 android:id="@+id/enlaceweb"
-                android:layout_width="95dp"
-                android:layout_height="31dp"
+                android:layout_width="187dp"
+                android:layout_height="37dp"
+                android:backgroundTint="#000000"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="Button"
+                android:text="VER EN IMDB"
+                android:textColor="#FFFFFF"
                 app:cornerRadius="0px"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/genero"
-                app:layout_constraintVertical_bias="0.082" />
+                app:layout_constraintVertical_bias="0.015" />
 
             <TextView
                 android:id="@+id/descripciondata"
-                android:layout_width="299dp"
-                android:layout_height="63dp"
-                android:text="TextView"
+                android:layout_width="396dp"
+                android:layout_height="98dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.133"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.859" />
+                app:layout_constraintVertical_bias="0.616" />
 
             <TextView
                 android:id="@+id/tipodataa"
-                android:layout_width="61dp"
-                android:layout_height="21dp"
+                android:layout_width="135dp"
+                android:layout_height="30dp"
                 android:text="TextView"
-                tools:layout_editor_absoluteX="208dp"
-                tools:layout_editor_absoluteY="149dp"
-                tools:ignore="MissingConstraints" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="420dp"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="51dp">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="155dp"
-                android:layout_height="42dp"
-                android:text="Filmoteca"
-                android:textAlignment="viewStart"
-                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.298"
+                app:layout_constraintHorizontal_bias="0.597"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.444" />
-
-            <ImageView
-                android:id="@+id/logoandroid"
-                android:layout_width="80dp"
-                android:layout_height="53dp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:srcCompat="@tools:sample/avatars"
+                app:layout_constraintVertical_bias="0.389"
                 tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/volverdata"
+                android:layout_width="140dp"
+                android:layout_height="47dp"
+                android:backgroundTint="#000000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="VOLVER"
+                android:textColor="#F1F1F1"
+                app:cornerRadius="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" />
+
+            <Button
+                android:id="@+id/editardata"
+                android:layout_width="140dp"
+                android:layout_height="47dp"
+                android:backgroundTint="#000000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="EDITAR"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.772"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-
-    <Button
-        android:id="@+id/volverdata"
-        android:layout_width="140dp"
-        android:layout_height="47dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="Button"
-        app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
-
-    <Button
-        android:id="@+id/editardata"
-        android:layout_width="140dp"
-        android:layout_height="47dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="Button"
-        app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

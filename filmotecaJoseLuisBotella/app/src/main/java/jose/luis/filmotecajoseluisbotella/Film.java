@@ -1,5 +1,9 @@
 package jose.luis.filmotecajoseluisbotella;
 
+import static jose.luis.filmotecajoseluisbotella.FilmDataSource.*;
+
+import android.util.Log;
+
 public class Film {
     // Tipos de formatos
     // Almacena el índice en el que se encuentra el valor de cada formato en el recurso arrarys.
@@ -100,6 +104,5 @@ public class Film {
     public void setComments(String comments) {
         this.comments = comments;
     }
-
 
 }

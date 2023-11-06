@@ -19,9 +19,9 @@ public class FilmDataSource {
         films.add(f);
 
         f = new Film();
-        f.setTitle("Back to the future");
+        f.setTitle("Regreso al futuro");
         f.setDirector("Robert Zemeckis");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.regreso);
         f.setComments("Marty McFly, is sent 30 years into the past in a time-travelling DeLorean.");
         f.setFormat(Film.FORMAT_DIGITAL);
         f.setGenre(Film.GENRE_SCIFI);
@@ -30,9 +30,9 @@ public class FilmDataSource {
         films.add(f);
 
         f = new Film();
-        f.setTitle("Piratas del Caribe: La Maldición del Perla Negra");
+        f.setTitle("Piratas del Caribe");
         f.setDirector("Gore Verbinski");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.piratas);
         f.setComments("Las aventuras del Capitán Jack Sparrow en busca de un tesoro legendario.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_ACTION);
@@ -43,7 +43,7 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("Toy Story");
         f.setDirector("John Lasseter");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.toy);
         f.setComments("La primera película animada de Pixar sobre los juguetes que cobran vida cuando los humanos no están mirando.");
         f.setFormat(Film.FORMAT_DIGITAL);
         f.setGenre(Film.GENRE_SCIFI);
@@ -52,9 +52,9 @@ public class FilmDataSource {
         films.add(f);
 
         f = new Film();
-        f.setTitle("Star Wars: Episodio IV - Una Nueva Esperanza");
+        f.setTitle("Star Wars");
         f.setDirector("George Lucas");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.star);
         f.setComments("El inicio de la legendaria saga de Star Wars en una galaxia muy, muy lejana.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_SCIFI);
@@ -63,9 +63,9 @@ public class FilmDataSource {
         films.add(f);
 
         f = new Film();
-        f.setTitle("Indiana Jones y los Cazadores del Arca Perdida");
+        f.setTitle("Indiana Jones");
         f.setDirector("Steven Spielberg");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.indiana);
         f.setComments("Las aventuras del arqueólogo y aventurero Indiana Jones en busca de un tesoro legendario.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_ACTION);
@@ -76,7 +76,7 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("Jurassic Park");
         f.setDirector("Steven Spielberg");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.jurasic);
         f.setComments("Un grupo de científicos queda atrapado en una isla llena de dinosaurios genéticamente recreados.");
         f.setFormat(Film.FORMAT_DIGITAL);
         f.setGenre(Film.GENRE_SCIFI);
@@ -85,9 +85,9 @@ public class FilmDataSource {
         films.add(f);
 
         f = new Film();
-        f.setTitle("Torrente, el brazo tonto de la ley");
+        f.setTitle("Torrente");
         f.setDirector("Santiago Segura");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.torrente);
         f.setComments("Las locuras del policía más inepto de España mientras intenta resolver un caso.");
         f.setFormat(Film.FORMAT_DVD);
         f.setGenre(Film.GENRE_COMEDY);
@@ -98,7 +98,7 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("Shrek");
         f.setDirector("Andrew Adamson, Vicky Jenson");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.sreck);
         f.setComments("Un ogro llamado Shrek se embarca en una misión para rescatar a la princesa Fiona.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_ACTION);
@@ -107,9 +107,9 @@ public class FilmDataSource {
         films.add(f);
 
         f = new Film();
-        f.setTitle("El Señor de los Anillos: La Comunidad del Anillo");
+        f.setTitle("El Señor de los Anillos");
         f.setDirector("Peter Jackson");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.indiana);
         f.setComments("La primera entrega de la epopeya de fantasía basada en la obra de J.R.R. Tolkien.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_SCIFI);
@@ -120,7 +120,7 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("Harry Potter y la Piedra Filosofal");
         f.setDirector("Chris Columbus");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.harry);
         f.setComments("La primera película de la saga de Harry Potter basada en las novelas de J.K. Rowling.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_SCIFI);
@@ -131,7 +131,7 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("Vengadores: Endgame");
         f.setDirector("Anthony y Joe Russo");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.vengadores);
         f.setComments("La culminación de la saga de los Vengadores de Marvel.");
         f.setFormat(Film.FORMAT_DIGITAL);
         f.setGenre(Film.GENRE_SCIFI);
@@ -142,23 +142,12 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("El Laberinto del Fauno");
         f.setDirector("Guillermo del Toro");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.fauno);
         f.setComments("En la posguerra española, una niña se escapa a un mundo de fantasía mientras lidia con la brutalidad de su padrastro.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_SCIFI);
         f.setImdbUrl("http://www.imdb.com/title/tt0457430");
         f.setYear(2006);
-        films.add(f);
-
-        f = new Film();
-        f.setTitle("El Secreto de sus Ojos");
-        f.setDirector("Juan José Campanella");
-        f.setImageResId(R.mipmap.ic_launcher);
-        f.setComments("Un investigador judicial jubilado busca la verdad detrás de un caso sin resolver y recuerda un amor del pasado.");
-        f.setFormat(Film.FORMAT_DIGITAL);
-        f.setGenre(Film.GENRE_DRAMA);
-        f.setImdbUrl("http://www.imdb.com/title/tt1305806");
-        f.setYear(2009);
         films.add(f);
 
         f.setTitle("El Padrino");
@@ -226,26 +215,12 @@ public class FilmDataSource {
         f.setYear(2004);
         films.add(f);
 
-        f = new Film();
-        f.setTitle("Rec");
-        f.setDirector("Jaume Balagueró, Paco Plaza");
-        f.setImageResId(R.mipmap.ic_launcher);
-        f.setComments("Una reportera y su cámara quedan atrapados en un edificio infectado por una extraña epidemia.");
-        f.setFormat(Film.FORMAT_BLURAY);
-        f.setGenre(Film.GENRE_HORROR);
-        f.setImdbUrl("http://www.imdb.com/title/tt1038988");
-        f.setYear(2007);
-        films.add(f);
-
-        f = new Film();
-        f.setTitle("Y tu mamá también");
-        f.setDirector("Alfonso Cuarón");
-        f.setImageResId(R.mipmap.ic_launcher);
-        f.setComments("Dos adolescentes emprenden un viaje con una mujer mayor y descubren la vida y el deseo.");
-        f.setFormat(Film.FORMAT_DIGITAL);
-        f.setGenre(Film.GENRE_DRAMA);
-        f.setImdbUrl("http://www.imdb.com/title/tt0245574");
-        f.setYear(2001);
-        films.add(f);
     }
+    public static Film posicionpelicula(int position) {
+        if (position >= 0 && position < films.size()) {
+            return films.get(position);
+        }
+        return null;
+    }
+
     }
