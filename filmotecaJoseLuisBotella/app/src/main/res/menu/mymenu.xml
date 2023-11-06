@@ -7,4 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Acerca de" />
+    <item
+        android:id="@+id/itemAgregarPelicula"
+        android:title="Nueva Pelicula" />
 </menu>

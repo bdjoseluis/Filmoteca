@@ -13,9 +13,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class FilmDataActivity extends AppCompatActivity {
-
-    ArrayList<Film> films = FilmDataSource.films;
-    int posicion;
     private Film film;
 
     @Override
@@ -23,9 +20,8 @@ public class FilmDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_film_data);
 
-        Intent intent =  new Intent(FilmDataActivity.this, FilmDataActivity.class);
-        posicion = intent.getIntExtra("FILM_POSITION", 0);//mirarselo preguntar a german por q me tiene hartico
-       // Intent intent = new Intent(FilmDataListActivity.this, FilmDataActivity.class);
+        Intent intent = getIntent();
+        int posicion = intent.getIntExtra("FILM_POSITION", 0);
 
         //Film film = films.get(posicion);
         film = FilmDataSource.films.get(posicion);

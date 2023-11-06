@@ -34,9 +34,10 @@ public class FilmListActivity extends AppCompatActivity implements AdapterView.O
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
         //Toast.makeText(MainActivity.this, "Se ha pulsado sobre"+ ciudades.get(i) , Toast.LENGTH_SHORT).show();
-        Film selectedFilm = films.get(i);
+        //Film selectedFilm = films.get(i);
+
         Intent intent = new Intent(this, FilmDataActivity.class);
-        intent.putExtra("FILM_POSITION", l);
+        intent.putExtra("FILM_POSITION", i);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
@@ -52,6 +53,10 @@ public class FilmListActivity extends AppCompatActivity implements AdapterView.O
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         switch (id) {
+            case R.id.itemAgregarPelicula:
+                Intent agregar = new Intent(FilmListActivity.this, AgregarActivity.class);
+                startActivity(agregar);
+                return true;
             case R.id.itemAcercaDe:
                 // Abre la actividad AboutActivity
                 Intent aboutIntent = new Intent(FilmListActivity.this, AboutActivity.class);
