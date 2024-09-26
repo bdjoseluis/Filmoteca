@@ -11,15 +11,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class FilmAdapter extends ArrayAdapter <Film>{
 
     private Context context;
     private int resource;
-    private ArrayList<Film> misPeliculas;
+    private List<Film> misPeliculas;
 
-    public FilmAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Film> misPeliculas) {
+    public FilmAdapter(@NonNull Context context, int resource, @NonNull List<Film> misPeliculas) {
         super(context, resource, misPeliculas);
         this.context = context;
         this.resource = resource;
@@ -34,8 +34,6 @@ public class FilmAdapter extends ArrayAdapter <Film>{
 
         View mifila = inflador.inflate(resource, parent, false);
 
-        Film film = misPeliculas.get(position);
-
         TextView titulo = mifila.findViewById(R.id.txtFilm);
         TextView director = mifila.findViewById(R.id.txtdirector);
         ImageView imgFilm = mifila.findViewById(R.id.imgFilm);
@@ -45,27 +43,6 @@ public class FilmAdapter extends ArrayAdapter <Film>{
         imgFilm.setImageResource(misPeliculas.get(position).getImageResId());
 
 
-        TextView titulodata = mifila.findViewById(R.id.titulodata);
-        TextView directordata = mifila.findViewById(R.id.directordata);
-        ImageView caratuladata = mifila.findViewById(R.id.caratuladata);
-
-        //titulodata.setText(misPeliculas.get(position).getTitle());
-        /*directordata.setText(misPeliculas.get(position).getDirector());
-        caratuladata.setImageResource(misPeliculas.get(position).getImageResId());
-
-        /*   String nombre=misPeliculas.get(position).getComments();
-        txtCiudad.setText(nombre);
-        String descripcion=misPeliculas.get(position).getDescripcion();
-        txtDescripcion.setText(descripcion);
-        int idimagen=misPeliculas.get(position).getImagen();
-        imgCiudad.setImageResource(idimagen);
-
-
-         */
         return mifila;
     }
-        private String getGenreText(int genre) {
-            return "Género: " + genre;
-        }
-
-    }
+}

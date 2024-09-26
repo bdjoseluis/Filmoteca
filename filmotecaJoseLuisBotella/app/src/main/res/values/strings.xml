@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">FilmotecaJoseLuisBotella</string>
+    <string name="app_name">Filmoteca</string>
+    <string name="txtDirector">Director:</string>
+    <string name="txtAño">Año:</string>
+    <string name="verWeb">VER EN IMDB</string>
+    <string name="editar">EDITAR PELICULA</string>
+    <string name="volver">VOLVER</string>
+    <string name="web">IR AL SITIO WEB</string>
+    <string name="pass">password</string>
+    <string name="mas">Mas</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="hintCorreo">email</string>
+    <string name="soporte">SOPORTE</string>
+    <string name="crear">Crea una cuenta</string>
+
+    <string-array name="genero">
+        <item>Acción</item>
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>Scifi</item>
+        <item>Terror</item>
+    </string-array>
+
+    <string-array name="formato">
+        <item>FORMAT_DVD</item>
+        <item>FORMAT_BLURAY</item>
+        <item>FORMAT_DIGITAL</item>
+    </string-array>
 </resources>

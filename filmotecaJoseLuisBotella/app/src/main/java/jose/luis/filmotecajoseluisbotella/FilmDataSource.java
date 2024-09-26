@@ -152,7 +152,7 @@ public class FilmDataSource {
 
         f.setTitle("El Padrino");
         f.setDirector("Francis Ford Coppola");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.descarga);
         f.setComments("La saga de una poderosa familia de la mafia en Nueva York.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_DRAMA);
@@ -163,7 +163,7 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("El Laberinto del Fauno");
         f.setDirector("Guillermo del Toro");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.fauno);
         f.setComments("Una niña escapa a un mundo de fantasía mientras enfrenta la brutalidad de su padrastro en la posguerra española.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_SCIFI);
@@ -174,7 +174,7 @@ public class FilmDataSource {
         f = new Film();
         f.setTitle("El Resplandor");
         f.setDirector("Stanley Kubrick");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.resplandor);
         f.setComments("Un escritor y su familia experimentan eventos paranormales aislados en un hotel aislado.");
         f.setFormat(Film.FORMAT_BLURAY);
         f.setGenre(Film.GENRE_HORROR);
@@ -183,31 +183,9 @@ public class FilmDataSource {
         films.add(f);
 
         f = new Film();
-        f.setTitle("Mujeres al Borde de un Ataque de Nervios");
-        f.setDirector("Pedro Almodóvar");
-        f.setImageResId(R.mipmap.ic_launcher);
-        f.setComments("Una azafata busca al amante que la dejó con una cacerola de gazpacho como única explicación.");
-        f.setFormat(Film.FORMAT_DVD);
-        f.setGenre(Film.GENRE_COMEDY);
-        f.setImdbUrl("http://www.imdb.com/title/tt0095675");
-        f.setYear(1988);
-        films.add(f);
-
-        f = new Film();
-        f.setTitle("Los Otros");
-        f.setDirector("Alejandro Amenábar");
-        f.setImageResId(R.mipmap.ic_launcher);
-        f.setComments("Una mujer con dos hijos fotosensibles contrata a tres sirvientes para cuidar de su mansión.");
-        f.setFormat(Film.FORMAT_BLURAY);
-        f.setGenre(Film.GENRE_HORROR);
-        f.setImdbUrl("http://www.imdb.com/title/tt0230600");
-        f.setYear(2001);
-        films.add(f);
-
-        f = new Film();
         f.setTitle("Mar Adentro");
         f.setDirector("Alejandro Amenábar");
-        f.setImageResId(R.mipmap.ic_launcher);
+        f.setImageResId(R.drawable.mar);
         f.setComments("La historia de un tetrapléjico que luchó por el derecho a morir con dignidad.");
         f.setFormat(Film.FORMAT_DVD);
         f.setGenre(Film.GENRE_DRAMA);

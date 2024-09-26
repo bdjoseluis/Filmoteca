@@ -30,13 +30,12 @@ public class AboutActivity extends AppCompatActivity {
         soporte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:filmoteca@pmdm.es"));
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Soporte Filmoteca");
                 intent.putExtra(Intent.EXTRA_TEXT, "Texto del correo de soporte");
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                }
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"filmoteca@pmdm.es"});
+                startActivity(intent);
             }
         });
 

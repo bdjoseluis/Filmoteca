@@ -10,4 +10,10 @@
     <item
         android:id="@+id/itemAgregarPelicula"
         android:title="Nueva Pelicula" />
+    <item
+        android:id="@+id/masinfo"
+        android:title="Mas Info" />
+    <item
+        android:id="@+id/cerrarsesion"
+        android:title="Cerrar Sesion" />
 </menu>
